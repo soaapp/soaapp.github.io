@@ -1,10 +1,8 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="Gatsby" src="https://github.com/user-attachments/assets/b73bfe22-edd5-44db-bb33-b06d7ecd6be3" width="60" />
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  ZadTech Solutions Portfolio Site
 </h1>
 
 ## 👨🏻‍💻 Development Steps
