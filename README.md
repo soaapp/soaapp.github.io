@@ -2,7 +2,7 @@
     <img alt="Gatsby" src="https://github.com/user-attachments/assets/b73bfe22-edd5-44db-bb33-b06d7ecd6be3" width="60" />
 </p>
 <h1 align="center">
-  ZadTech Solutions Portfolio Site 
+  ZadTech Solutions Portfolio Site
 </h1>
 
 ## 👨🏻‍💻 Development Steps
