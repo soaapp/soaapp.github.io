@@ -51,7 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
       {/* Social Icons on the Left */}
       <aside className="fixed bottom-0 left-8 hidden md:flex flex-col items-center space-y-6">
-        <a href="https://github.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/soaapp" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -64,7 +64,7 @@ const IndexPage: React.FC<PageProps> = () => {
             />
           </svg>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+        <a href="linkedin.com/in/jayjahanzad" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -88,6 +88,68 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="h-32 w-px bg-white"></div>
         </div>
       </aside>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="min-h-screen flex items-center px-8 md:px-24 lg:px-48 space-y-6"
+      >
+        <div className="w-full md:w-1/2">
+          <h2 className="font-code text-white font-bold text-3xl mb-6">
+            01. About Me
+          </h2>
+          <p className="text-white text-lg leading-relaxed">
+            Hello! My name is Jay and I enjoy building things with detail and
+            care. I personally believe every line of code should be written and
+            regarded as art. I want to create products and services that clients
+            and users are genuinely passionate about.
+          </p>
+          <p className="text-white text-lg leading-relaxed mt-4">
+            I’ve had the privilege of working with{" "}
+            <span className="text-sky-300">enterprises</span>,{" "}
+            <span className="text-sky-300">startups</span>, and{" "}
+            <span className="text-sky-300">personal clients</span>.
+          </p>
+          <div className="mt-8">
+            <h3 className="text-white text-lg mb-4">
+              Here are a few technologies I’ve been working with recently:
+            </h3>
+            <ul className="grid grid-cols-2 gap-2 text-white">
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>Java</span>
+              </li>
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>TypeScript</span>
+              </li>
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>React</span>
+              </li>
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>Python</span>
+              </li>
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>Node.js</span>
+              </li>
+              <li className="font-code flex items-center space-x-2">
+                <span className="text-sky-950">▸</span>
+                <span>Angular</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4">
+          <img
+            src="/images/headshot1.jpg"
+            alt="Profile"
+            className="rounded-md border-2 bg-sky-950 shadow-lg"
+          />
+        </div>
+      </section>
     </div>
   );
 };
