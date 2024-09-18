@@ -1,23 +1,35 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
+const handleScroll = (
+  e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  sectionId: string
+) => {
+  e.preventDefault();
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <div className="min-h-screen bg-sky-700 text-white font-sans">
       {/* Navbar */}
       <header className="flex justify-end items-center p-8">
         <nav className="flex space-x-8 font-code text-white-300 text-sm items-center">
-          <a href="#about" className="hover:text-sky-950">
+          <a
+            href="#about"
+            onClick={(e) => handleScroll(e, "about")}
+            className="hover:text-sky-950"
+          >
             01. About
           </a>
           <a href="#experience" className="hover:text-sky-950">
             02. Experience
           </a>
-          <a href="#work" className="hover:text-sky-950">
-            03. Work
-          </a>
           <a href="#contact" className="hover:text-sky-950">
-            04. Contact
+            03. Contact
           </a>
           <a
             href="/resume.pdf"
@@ -149,6 +161,25 @@ const IndexPage: React.FC<PageProps> = () => {
             className="rounded-md border-2 bg-sky-950 shadow-lg"
           />
         </div>
+      </section>
+
+      <section
+        id="contact"
+        className="min-h-screen flex flex-col items-center justify-center text-center px-8"
+      >
+        <h2 className="text-white font-code text-md">03. Contact Me</h2>
+        <h1 className="text-5xl font-bold text-gray-100 mt-4">Get In Touch</h1>
+        <p className="text-lg text-gray-400 max-w-2xl mt-6">
+          Although I’m not currently looking for any new opportunities, my inbox
+          is always open. Whether you have a question or just want to say hi,
+          I’ll try my best to get back to you!
+        </p>
+        <a
+          href="mailto:jayjahanzad@gmail.com"
+          className="mt-12 px-6 py-3 border-2 font-code border-white text-white rounded-md hover:bg-white hover:text-sky-950 transition-colors duration-300"
+        >
+          Email Me
+        </a>
       </section>
     </div>
   );
