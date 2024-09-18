@@ -66,10 +66,10 @@ const IndexPage: React.FC<PageProps> = () => {
 
           {/* Call-to-action button */}
           <a
-            href="#"
+            href="#experience"
             className="border font-code border-white-300 px-6 py-3 rounded-md text-white-300 hover:bg-white hover:text-black"
           >
-            Checkout some of my favourites
+            Checkout what I've done
           </a>
         </main>
 
