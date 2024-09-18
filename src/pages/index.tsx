@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import WorkExperience from "../components/experience";
@@ -17,6 +17,16 @@ const handleScroll = (
 
 const IndexPage: React.FC<PageProps> = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isPageReady, setIsPageReady] = useState(false);
+
+  useEffect(() => {
+    if (!isLoading) {
+      const animationTimeout = setTimeout(() => {
+        setIsPageReady(true);
+      }, 500);
+      return () => clearTimeout(animationTimeout);
+    }
+  }, [isLoading]);
 
   return (
     <div className="relative min-h-screen bg-sky-700 text-white font-sans">
