@@ -41,7 +41,7 @@ const IndexPage: React.FC<PageProps> = () => {
             03. Contact
           </a>
           <a
-            href="/resume.pdf"
+            href="/files/JayJ_Resume2024_SEv3.pdf"
             className="border border-white px-4 py-2 rounded hover:bg-white hover:text-sky-950"
           >
             Resume
