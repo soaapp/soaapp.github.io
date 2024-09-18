@@ -30,9 +30,9 @@ const Preloader = ({
       style={{ backgroundColor: "#0F4878" }} // Match this color to your `bg-sky-700`
     >
       <img
-        src="/images/clearzadtech.png"
+        src="/images/zadtechfull.png"
         alt="Logo"
-        className="w-48 h-48 animate-pulse"
+        className="max-w-xs object-contain animate-pulse"
       />
     </div>
   );
