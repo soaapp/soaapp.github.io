@@ -1,6 +1,8 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
+import WorkExperience from "../components/experience";
+
 const handleScroll = (
   e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   sectionId: string
@@ -41,7 +43,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </header>
 
       {/* Main Section */}
-      <main className="flex flex-col justify-center items-start px-8 md:px-24 lg:px-48 mt-16 space-y-6">
+      <main className="flex flex-col justify-center items-start px-8 md:px-24 lg:px-48 min-h-screen space-y-6">
         <h3 className="font-code text-white-400 text-md">Hi, my name is</h3>
         <h1 className="text-6xl md:text-7xl font-bold">Jay Jahanzad.</h1>
         <h2 className="text-4xl md:text-5xl text-sky-950 font-semibold">
@@ -163,6 +165,9 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
       </section>
 
+      <WorkExperience />
+
+      {/* Contact Me Section */}
       <section
         id="contact"
         className="min-h-screen flex flex-col items-center justify-center text-center px-8"
