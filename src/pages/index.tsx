@@ -72,6 +72,19 @@ const IndexPage: React.FC<PageProps> = () => {
 
       {/* Social Icons on the Left */}
       <aside className="fixed bottom-0 left-8 hidden md:flex flex-col items-center space-y-6">
+        {/* Email */}
+        <a
+          href="mailto:jayjahanzad@gmail.com"
+          className="hover:fill-sky-950 transition-colors duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-6 h-6 fill-white hover:fill-sky-950 transition-colors duration-300"
+          >
+            <path d="M12 13.2l-11.5-9.3c0-0.1 0-0.2 0-0.3 0-0.5 0.4-1 1-1h21c0.6 0 1 0.5 1 1v0.3l-11.5 9.3zm-11.5-10v13.6c0 0.6 0.4 1 1 1h21c0.6 0 1-0.5 1-1v-13.6l-11.5 9.3-11.5-9.3z" />
+          </svg>
+        </a>
         <a href="https://github.com/soaapp" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,19 +108,6 @@ const IndexPage: React.FC<PageProps> = () => {
           </svg>
         </a>
         <div className="h-32 w-px bg-white"></div>
-      </aside>
-
-      {/* Email on the Right */}
-      <aside className="fixed bottom-0 right-8 hidden md:block">
-        <div className="flex flex-col items-center space-y-6">
-          <a
-            href="mailto:jayjahanzad@gmail.com"
-            className="text-white-400 hover:text-sky-950"
-          >
-            jayjahanzad@gmail.com
-          </a>
-          <div className="h-32 w-px bg-white"></div>
-        </div>
       </aside>
 
       {/* About Section */}
