@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { useState } from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import WorkExperience from "../components/experience";
+import Preloader from "../components/loader";
 
 const handleScroll = (
   e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -15,6 +16,12 @@ const handleScroll = (
 };
 
 const IndexPage: React.FC<PageProps> = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  if (isLoading) {
+    return <Preloader setIsLoading={setIsLoading} />;
+  }
+
   return (
     <div className="min-h-screen bg-sky-700 text-white font-sans">
       {/* Navbar */}
