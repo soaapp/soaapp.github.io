@@ -54,12 +54,16 @@ const IndexPage: React.FC<PageProps> = () => {
 
         {/* Main Section */}
         <main className="flex flex-col justify-center items-start px-8 md:px-24 lg:px-48 min-h-screen space-y-6">
-          <h3 className="font-code text-white-400 text-md">Hi, my name is</h3>
-          <h1 className="text-6xl md:text-7xl font-bold">Jay Jahanzad.</h1>
-          <h2 className="text-4xl md:text-5xl text-sky-950 font-semibold">
+          <h3 className="font-code text-white-400 opacity-0 animate-fadeInUp text-md">
+            Hi, my name is
+          </h3>
+          <h1 className="text-6xl md:text-7xl opacity-0 animate-fadeInUp font-bold">
+            Jay Jahanzad.
+          </h1>
+          <h2 className="text-4xl md:text-5xl text-sky-950 opacity-0 animate-fadeInUp font-semibold">
             I am a big fan of building solutions.
           </h2>
-          <p className="text-white max-w-xl">
+          <p className="text-white opacity-0 animate-fadeInUp max-w-xl">
             I'm a software engineer specializing in designing and creating
             digital solutions to help ideas come to life.
           </p>
