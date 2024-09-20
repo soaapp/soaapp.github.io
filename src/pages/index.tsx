@@ -134,7 +134,7 @@ const IndexPage: React.FC<PageProps> = () => {
         {/* About Section */}
         <section
           id="about"
-          className="min-h-screen flex items-center px-8 md:px-24 lg:px-48 space-y-6"
+          className="min-h-screen flex items-center justify-center px-8 md:px-24 lg:px-48 space-y-6"
         >
           <div className="w-full md:w-1/2">
             <h2 className="font-code text-white font-bold text-3xl mb-6">
@@ -184,7 +184,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full md:w-1/4">
+          <div className="w-full md:w-1/4 pl-4">
             <img
               src="/images/headshot1.jpg"
               alt="Profile"
