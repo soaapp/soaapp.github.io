@@ -116,7 +116,7 @@ const IndexPage: React.FC<PageProps> = () => {
             </svg>
           </a>
           <a
-            href="linkedin.com/in/jayjahanzad"
+            href="https://linkedin.com/in/jayjahanzad"
             target="_blank"
             rel="noreferrer"
           >
@@ -201,13 +201,11 @@ const IndexPage: React.FC<PageProps> = () => {
           className="min-h-screen flex flex-col items-center justify-center text-center px-8"
         >
           <h2 className="text-white font-code text-md">03. Contact Me</h2>
-          <h1 className="text-5xl font-bold text-gray-100 mt-4">
-            Get In Touch
-          </h1>
+          <h1 className="text-5xl font-bold text-gray-100 mt-4">Lets chat!</h1>
           <p className="text-lg text-gray-400 max-w-2xl mt-6">
-            Although I’m not currently looking for any new opportunities, my
-            inbox is always open. Whether you have a question or just want to
-            say hi, I’ll try my best to get back to you!
+            While I'm not actively seeking new opportunities at the moment, my
+            inbox is always open. Feel free to reach out with any questions or
+            just to say hello—I'll do my best to respond!
           </p>
           <a
             href="mailto:jayjahanzad@gmail.com"
