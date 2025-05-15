@@ -3,13 +3,29 @@ import React, { useState } from "react";
 const WorkExperience: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const companies = ["CIBC", "Train Fitness AI", "iReal.AI"];
+  const companies = [
+    "CIBC (Current Role)",
+    "CIBC (Past Roles)",
+    "Train Fitness AI",
+    "iReal.AI",
+  ];
 
   const experiences = [
     {
+      role: "Machine Learning Engineer",
+      company: "CIBC",
+      duration: "January 2025 - Present",
+      responsibilities: [
+        "Designed and deployed RAG systems with custom chunking and prompt engineering.",
+        "Benchmarked embedding models and retrieval techniques like MMR.",
+        "Deployed LLaMA models on OpenShift using vLLM and RHOAI.",
+        "Modernized COBOL workflows using LLMs for code and requirements translation.",
+      ],
+    },
+    {
       role: "Application Engineer Consultant",
       company: "CIBC",
-      duration: "May 2019 - Present",
+      duration: "May 2019 - December 2024",
       responsibilities: [
         "Developed event-based integration with Java, SpringBoot, and Quarkus, focusing on Token/Certificate Management and APIs, using Openshift and Azure.",
         "Implemented event-driven integration with Solace PubSub+ in banking applications.",
