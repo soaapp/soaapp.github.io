@@ -14,54 +14,57 @@ interface ExperienceItem {
 export default function Experience() {
   const experiences: ExperienceItem[] = [
     {
-      title: "Senior Machine Learning Engineer",
-      company: "TechCorp AI",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Machine Learning Engineer - Team Lead, Sr. Application Developer",
+      company: "CIBC",
+      location: "Toronto, ON (Remote)",
+      period: "June 2020 - Present (Currently ML Eng Team Lead)",
       description: [
-        "Lead a team of 5 ML engineers building next-gen recommendation systems",
-        "Architected and deployed MLOps pipelines serving 10M+ users daily",
-        "Reduced model inference time by 60% through optimization and model compression"
+        "Led development of ML-powered solutions including RAG systems with custom chunking, prompt engineering, and architecture design using open-source models (LLaMA, Mistral, Granite) and LangChain/LangGraph; benchmarked embedding models and retrieval strategies like MMR.",
+        "Deployed and optimized LLaMA models on OpenShift using vLLM and RHOAI, building scalable inference pipelines and integrating with vector stores (Qdrant).",
+        "Translated legacy COBOL into Angular frontends and business logic using LLM-based tooling; designed modernization workflows across backend and UI layers.",
+        "Built full-stack platforms and event-driven systems with Java, Quarkus, and Solace PubSub+, focusing on token management, CIAM, and API ecosystems, deployed on OpenShift and Azure.",
+        "Collaborated across business units to align ML initiatives and backend systems, leveraging Databricks, Jenkins, and GitHub Actions for data processing and DevOps."
       ],
-      technologies: ["Python", "TensorFlow", "Kubernetes", "AWS", "MLflow"],
+      technologies: ["Python", "Java", "Angular", "LangChain", "OpenShift", "Azure", "LLMs", "Qdrant", "vLLM", "RHOAI"],
       achievements: [
-        "Increased user engagement by 35% with personalized recommendations",
-        "Built automated A/B testing framework for ML models",
-        "Mentored 3 junior engineers who were promoted within the year"
+        "Delivered modernization of legacy banking workflows using LLMs and Angular.",
+        "Benchmarked and deployed multiple open-source LLMs in production.",
+        "Built scalable ML inference pipelines for critical banking applications."
       ]
     },
     {
-      title: "Machine Learning Engineer",
-      company: "DataDriven Solutions",
-      location: "Austin, TX",
-      period: "2020 - 2022",
-      description: [
-        "Developed computer vision models for quality control in manufacturing",
-        "Built real-time anomaly detection systems for IoT sensor data",
-        "Collaborated with product teams to integrate ML into customer-facing features"
-      ],
-      technologies: ["PyTorch", "OpenCV", "Docker", "GCP", "Apache Kafka"],
-      achievements: [
-        "Achieved 99.2% accuracy in defect detection, saving $2M annually",
-        "Reduced false positive rate by 45% in anomaly detection",
-        "Published 2 papers on industrial computer vision applications"
-      ]
-    },
-    {
-      title: "Data Scientist",
-      company: "StartupXYZ",
+      title: "iOS Engineer",
+      company: "Train Fitness (Startup)",
       location: "Remote",
-      period: "2019 - 2020",
+      period: "Jan 2024 - July 2024",
       description: [
-        "Built predictive models for customer churn and lifetime value",
-        "Designed and implemented data pipelines for ML model training",
-        "Created interactive dashboards for business stakeholders"
+        "Contributed as 1 of 5 iOS engineers to an AI-powered iOS and watchOS workout app, published to the App Store and generating revenue, with key features like Heart Rate Zones and Muscle Recovery.",
+        "Worked with Swift, SwiftUI, Combine, and advanced MVVM architecture, integrating network services such as third-party authentication, async operations, REST API calls, and local data persistence using Core Data and User Defaults.",
+        "Collaborated closely with the design team to ensure seamless UI/UX, building and maintaining the app’s design system using Atomic Design Pattern, including Dark Mode, Typography, and Asset Management.",
+        "Conducted end-to-end QA, including unit, domain, and view layer testing."
       ],
-      technologies: ["Python", "Scikit-learn", "Pandas", "PostgreSQL", "Tableau"],
+      technologies: ["Swift", "SwiftUI", "Combine", "MVVM", "Core Data", "User Defaults", "REST APIs", "Xcode"],
       achievements: [
-        "Reduced customer churn by 25% through predictive interventions",
-        "Increased marketing ROI by 40% with targeted campaigns",
-        "Established company's first ML engineering best practices"
+        "App successfully launched and generating revenue on the App Store.",
+        "Developed key features for workout analysis and user engagement.",
+        "Built and maintained a robust design system for mobile platforms."
+      ]
+    },
+    {
+      title: "Software Engineer",
+      company: "iReal.AI (Startup)",
+      location: "Toronto, ON",
+      period: "Apr 2018 - July 2019",
+      description: [
+        "Developed a real estate web app using Angular and TypeScript, deployed on Firebase/Firestore for real-time data management.",
+        "Used Google LLM libraries to create AI powered assistant for real estate appraisals.",
+        "Attended industry conferences like Collision in Toronto to network and enhance the app's visibility."
+      ],
+      technologies: ["Angular", "TypeScript", "Firebase", "Firestore", "Google LLM APIs"],
+      achievements: [
+        "Launched a real estate platform with AI-powered features.",
+        "Represented company at major industry events.",
+        "Integrated AI assistant for property appraisals."
       ]
     }
   ];

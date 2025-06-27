@@ -13,13 +13,13 @@ function App() {
   useEffect(() => {
     // Update page title based on active section
     const sectionTitles: Record<string, string> = {
-      about: 'About - Your Name | ML Engineer',
-      experience: 'Experience - Your Name | ML Engineer',
-      media: 'Projects - Your Name | ML Engineer',
-      contact: 'Contact - Your Name | ML Engineer'
+      about: 'About - Jay Jahanzad | ML Engineer',
+      experience: 'Experience - Jay Jahanzad | ML Engineer',
+      media: 'Projects - Jay Jahanzad | ML Engineer',
+      contact: 'Contact - Jay Jahanzad | ML Engineer'
     };
 
-    document.title = sectionTitles[activeSection] || 'Your Name | Senior ML Engineer';
+    document.title = sectionTitles[activeSection] || 'Jay Jahanzad | Senior ML Engineer';
   }, [activeSection]);
 
   return (

@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex justify-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-              <span className="font-mono">&lt;</span>YourName<span className="font-mono">/&gt;</span>
+              <span className="font-mono">&lt;</span>JayJ<span className="font-mono">/&gt;</span>
             </h1>
           </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="pt-6 border-t border-gray-800">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Your Name. All rights reserved. 
+              © {currentYear} Jay Jahanzad. All rights reserved. 
               <span className="mx-2">|</span>
               <span className="font-mono">{codeSnippet}</span>
             </p>

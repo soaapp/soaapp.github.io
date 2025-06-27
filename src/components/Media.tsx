@@ -3,7 +3,7 @@ import { ExternalLink, Github, Award, Presentation } from 'lucide-react';
 
 interface MediaItem {
   title: string;
-  type: 'project' | 'publication' | 'talk' | 'award';
+  type: 'project' | 'contribution' | 'talk' | 'award';
   description: string;
   image: string;
   technologies?: string[];
@@ -14,80 +14,44 @@ interface MediaItem {
 export default function Media() {
   const mediaItems: MediaItem[] = [
     {
-      title: "DeepRecommend: Neural Collaborative Filtering at Scale",
+      title: "Resumai",
       type: "project",
-      description: "A production-ready recommendation system serving 10M+ users with real-time personalization. Built with distributed computing and advanced deep learning architectures.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["TensorFlow", "Kubernetes", "Redis", "PostgreSQL", "Apache Kafka"],
+      description: "Fullstack AI/ML app that analyzes large numbers of resumes, outputs best candidates, and creates custom interview content.",
+      image: "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Python", "React", "ML", "Node.js"],
       links: [
-        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> },
-        { label: "Demo", url: "#", icon: <ExternalLink className="w-4 h-4" /> }
+        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
-      metrics: ["35% ↑ Engagement", "60% ↓ Latency", "99.9% Uptime"]
+      metrics: []
     },
     {
-      title: "Computer Vision for Industrial Quality Control",
-      type: "publication",
-      description: "Published research on automated defect detection in manufacturing using advanced CNN architectures. Achieved state-of-the-art results on multiple benchmarks.",
-      image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["PyTorch", "OpenCV", "Docker", "MLflow"],
-      links: [
-        { label: "Paper", url: "#", icon: <ExternalLink className="w-4 h-4" /> },
-        { label: "Code", url: "#", icon: <Github className="w-4 h-4" /> }
-      ],
-      metrics: ["99.2% Accuracy", "45% ↓ False Positives", "$2M Annual Savings"]
-    },
-    {
-      title: "ML in Production: Lessons from the Trenches",
-      type: "talk",
-      description: "Keynote presentation at ML Conf 2023 about building robust machine learning systems that actually work in production environments.",
-      image: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg?auto=compress&cs=tinysrgb&w=800",
-      links: [
-        { label: "Slides", url: "#", icon: <Presentation className="w-4 h-4" /> },
-        { label: "Video", url: "#", icon: <ExternalLink className="w-4 h-4" /> }
-      ],
-      metrics: ["500+ Attendees", "4.9/5 Rating", "Featured Talk"]
-    },
-    {
-      title: "Best ML Innovation Award 2023",
-      type: "award",
-      description: "Recognized for pioneering work in automated ML pipeline optimization, reducing model deployment time from weeks to hours.",
-      image: "https://images.pexels.com/photos/8386426/pexels-photo-8386426.jpeg?auto=compress&cs=tinysrgb&w=800",
-      links: [
-        { label: "Article", url: "#", icon: <ExternalLink className="w-4 h-4" /> }
-      ],
-      metrics: ["Industry Recognition", "90% ↓ Deployment Time", "Team Achievement"]
-    },
-    {
-      title: "Predictive Maintenance AI Platform",
+      title: "Orden",
       type: "project",
-      description: "End-to-end platform for predicting equipment failures using IoT sensor data and advanced time series forecasting models.",
-      image: "https://images.pexels.com/photos/8386443/pexels-photo-8386443.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Python", "TimeSeries", "Apache Airflow", "AWS", "Grafana"],
+      description: "React, Prisma, Cypress stack for a web marketplace connecting loaners and borrowers to find optimal loan rates.",
+      image: "https://images.pexels.com/photos/4386375/pexels-photo-4386375.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["React", "Prisma", "Cypress", "TypeScript"],
       links: [
-        { label: "Case Study", url: "#", icon: <ExternalLink className="w-4 h-4" /> },
-        { label: "Demo", url: "#", icon: <ExternalLink className="w-4 h-4" /> }
+        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
-      metrics: ["30% ↓ Downtime", "85% Prediction Accuracy", "Multi-Client Success"]
+      metrics: []
     },
     {
-      title: "Open Source ML Toolkit",
-      type: "project",
-      description: "Created and maintain a popular open-source library for ML model interpretability, used by 1000+ data scientists worldwide.",
-      image: "https://images.pexels.com/photos/8386454/pexels-photo-8386454.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Python", "Jupyter", "Scikit-learn", "Matplotlib", "Pytest"],
+      title: "NEO-ML",
+      type: "contribution",
+      description: "NASA Open Source contribution using NEOs API data to fine-tune HuggingFace models for asteroid data analysis and predictions.",
+      image: "https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Python", "HuggingFace", "NASA API", "ML"],
       links: [
-        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> },
-        { label: "PyPI", url: "#", icon: <ExternalLink className="w-4 h-4" /> }
+        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
-      metrics: ["2K+ GitHub Stars", "50K+ Downloads", "Active Community"]
+      metrics: []
     }
   ];
 
   const getTypeIcon = (type: string) => {
     switch (type) {
       case 'project': return '🚀';
-      case 'publication': return '📄';
+      case 'contribution': return '📄';
       case 'talk': return '🎤';
       case 'award': return '🏆';
       default: return '💡';
@@ -97,7 +61,7 @@ export default function Media() {
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'project': return 'bg-blue-100 text-blue-800';
-      case 'publication': return 'bg-green-100 text-green-800';
+      case 'contribution': return 'bg-green-100 text-green-800';
       case 'talk': return 'bg-purple-100 text-purple-800';
       case 'award': return 'bg-amber-100 text-amber-800';
       default: return 'bg-gray-100 text-gray-800';

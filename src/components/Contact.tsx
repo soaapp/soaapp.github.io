@@ -45,8 +45,7 @@ export default function Contact() {
   const socialLinks = [
     { icon: Linkedin, label: 'LinkedIn', url: '#', color: 'hover:text-blue-600' },
     { icon: Github, label: 'GitHub', url: '#', color: 'hover:text-gray-800' },
-    { icon: Twitter, label: 'Twitter', url: '#', color: 'hover:text-blue-400' },
-    { icon: Mail, label: 'Email', url: 'mailto:your.email@example.com', color: 'hover:text-red-500' }
+    { icon: Mail, label: 'Email', url: 'mailto:jjahanzad@gmail.com', color: 'hover:text-red-500' }
   ];
 
   return (
@@ -75,11 +74,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
-                    <div className="text-gray-600">your.email@example.com</div>
+                    <div className="text-gray-600">jjahanzad@gmail.com</div>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4">
+                {/* <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-blue-600" />
                   </div>
@@ -87,7 +86,7 @@ export default function Contact() {
                     <div className="font-semibold text-gray-900">Phone</div>
                     <div className="text-gray-600">+1 (555) 123-4567</div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -95,7 +94,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Location</div>
-                    <div className="text-gray-600">San Francisco, CA</div>
+                    <div className="text-gray-600">Toronto, ON</div>
                   </div>
                 </div>
               </div>
@@ -158,7 +157,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="Your name"
+                        placeholder="Jay Jahanzad"
                       />
                     </div>
                   </div>

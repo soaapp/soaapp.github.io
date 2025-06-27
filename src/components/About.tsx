@@ -3,8 +3,9 @@ import { Brain, Code, Coffee, Zap } from 'lucide-react';
 
 export default function About() {
   const techStack = [
-    'Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy',
-    'Docker', 'Kubernetes', 'AWS', 'GCP', 'MLflow', 'Git'
+    'Python', 'Java', 'Swift', 'JavaScript', 'TypeScript', 'SQL',
+    'LangChain', 'Springboot', 'Quarkus', 'React', 'Angular', 'Gatsby', 'React Native', 'Tailwind',
+    'Git', 'NPM', 'Docker', 'Azure', 'Firebase', 'Openshift', 'Postgres', 'Xcode', 'Figma', 'Adobe Suite'
   ];
 
   return (
@@ -15,31 +16,24 @@ export default function About() {
           <div className="space-y-6">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-gray-900">
-                Hey there! 👋 I'm a{' '}
+                Hi, I'm Jay Jahanzad{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                  Machine Learning Engineer
+                  — Software Engineer
                 </span>
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                I turn coffee into algorithms and data into insights. When I'm not training models 
-                that are smarter than me (which happens more often than I'd like to admit), 
-                you'll find me debugging why my neural network thinks a chihuahua is a muffin.
-              </p>
             </div>
 
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                With <span className="font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded">5+ years</span> in 
-                the field, I've built everything from recommendation systems that actually recommend 
-                good movies to computer vision models that can spot a defect from a mile away. 
-                I believe the best ML solutions are the ones that make people's lives easier, 
-                not more complicated.
+                With <span className="font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded">5+ years</span> in the industry, I've delivered ML-powered platforms, modernized legacy systems, and shipped mobile apps from concept to App Store. My journey includes leading teams, architecting RAG systems, and deploying scalable solutions for banks, startups, and research projects.
               </p>
 
               <p className="text-gray-700 leading-relaxed">
-                My superpower? Making machine learning accessible to humans (ironic, I know). 
-                Whether it's explaining why your model thinks every cat is a dog or building 
-                production systems that don't crash at 3 AM, I've got you covered.
+                I love collaborating across business, design, and engineering to create products that matter. Whether it's optimizing ML inference on OpenShift, designing beautiful iOS experiences, or building event-driven APIs, I bring a hands-on, creative approach to every project.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed">
+                Outside of work, you'll find me playing piano, watching hockey, or exploring the latest in AI and computer vision. Let's build something amazing together!
               </p>
             </div>
 
@@ -47,8 +41,8 @@ export default function About() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-blue-100">
                 <Brain className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                <div className="font-mono text-2xl font-bold text-blue-600">50+</div>
-                <div className="text-sm text-gray-600">Models Deployed</div>
+                <div className="font-mono text-2xl font-bold text-blue-600">30+</div>
+                <div className="text-sm text-gray-600">Applications Deployed</div>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-blue-100">
                 <Code className="w-8 h-8 text-blue-600 mx-auto mb-2" />
@@ -93,9 +87,7 @@ export default function About() {
                 <span className="text-lg mr-2">🤖</span> Fun Fact
               </h4>
               <p className="text-amber-700 text-sm leading-relaxed">
-                I once trained a model to predict my coffee consumption based on my commit frequency. 
-                It achieved 94% accuracy and immediately recommended I switch to decaf. 
-                I promptly deleted that model.
+                I once trained a model to predict my cat Pluto's mood based on his facial expression. He was "tired" with a 95% confidence 9 times out of 10. I proceeded to let him nap.
               </p>
             </div>
           </div>

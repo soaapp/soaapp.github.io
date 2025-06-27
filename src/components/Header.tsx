@@ -29,7 +29,7 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              <span className="font-mono">&lt;</span>YourName<span className="font-mono">/&gt;</span>
+              <span className="font-mono">&lt;</span>Jay J<span className="font-mono">/&gt;</span>
             </h1>
           </div>
 
