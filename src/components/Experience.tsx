@@ -128,11 +128,11 @@ export default function Experience() {
                       <ChevronRight className="w-4 h-4 mr-1 text-blue-600" />
                       What I Did
                     </h4>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 pl-5">
                       {exp.description.map((item, i) => (
-                        <li key={i} className="text-gray-700 flex items-start">
-                          <span className="text-blue-600 mr-2 mt-2">•</span>
-                          {item}
+                        <li key={i} className="text-gray-700 relative pl-2 -ml-1">
+                          <span className="absolute -left-4 top-0 text-blue-600">•</span>
+                          <span className="block">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -144,11 +144,11 @@ export default function Experience() {
                       <ChevronRight className="w-4 h-4 mr-1 text-amber-500" />
                       Key Wins
                     </h4>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 pl-5">
                       {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="text-gray-700 flex items-start">
-                          <span className="text-amber-500 mr-2 mt-2">★</span>
-                          {achievement}
+                        <li key={i} className="text-gray-700 relative pl-2 -ml-1">
+                          <span className="absolute -left-4 top-0 text-amber-500">★</span>
+                          <span className="block">{achievement}</span>
                         </li>
                       ))}
                     </ul>
