@@ -2,10 +2,15 @@ import React from 'react';
 import { Brain, Code, Coffee, Zap } from 'lucide-react';
 
 export default function About() {
-  const techStack = [
-    'Python', 'Java', 'Swift', 'JavaScript', 'TypeScript', 'SQL',
-    'LangChain', 'Springboot', 'Quarkus', 'React', 'Angular', 'Gatsby', 'React Native', 'Tailwind',
-    'Git', 'NPM', 'Docker', 'Azure', 'Firebase', 'Openshift', 'Postgres', 'Xcode', 'Figma', 'Adobe Suite'
+  const currentTechStack = [
+    'Python', 'LangChain', 'LangGraph','TypeScript', 'React', 'Node.js',
+    'Azure', 'Docker', 'Git', 
+  ];
+
+  const previousTechStack = [
+    'Java', 'Swift', 'SQL', 'Springboot',
+    'Quarkus', 'Angular', 'Firebase',
+    'Openshift', 'Postgres', 'Xcode', 'Figma', 'Adobe Suite'
   ];
 
   return (
@@ -63,30 +68,49 @@ export default function About() {
           </div>
 
           {/* Right Column - Tech Stack */}
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                <span className="font-mono text-blue-600">{`{`}</span> Tech Stack <span className="font-mono text-blue-600">{`}`}</span>
-              </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {techStack.map((tech, index) => (
-                  <div
-                    key={tech}
-                    className="px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 rounded-lg text-sm font-medium text-center hover:from-blue-100 hover:to-blue-200 transition-all duration-200 transform hover:scale-105"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {tech}
-                  </div>
-                ))}
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <div className="bg-white rounded-xl p-4 shadow-sm border border-amber-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  <span className="font-mono text-amber-500">{"{"}</span> Core Stack <span className="font-mono text-amber-500">{"}"}</span>
+                </h3>
+                <div className="grid grid-cols-3 gap-2">
+                  {currentTechStack.map((tech, index) => (
+                    <div
+                      key={`current-${tech}`}
+                      className="px-2 py-1 bg-gradient-to-r from-amber-50 to-amber-100 text-amber-800 rounded-md text-xs font-medium text-center hover:from-amber-100 hover:to-amber-200 transition-all duration-200 transform hover:scale-105"
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-4 shadow-sm border border-blue-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  <span className="font-mono text-blue-600">{"{"}</span> Experience in <span className="font-mono text-blue-600">{"}"}</span>
+                </h3>
+                <div className="grid grid-cols-3 gap-2">
+                  {previousTechStack.map((tech, index) => (
+                    <div
+                      key={`prev-${tech}`}
+                      className="px-2 py-1 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 rounded-md text-xs font-medium text-center hover:from-blue-100 hover:to-blue-200 transition-all duration-200 transform hover:scale-105"
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Fun Fact */}
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-6">
-              <h4 className="font-bold text-amber-800 mb-2 flex items-center">
-                <span className="text-lg mr-2">🤖</span> Fun Fact
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-4">
+              <h4 className="font-bold text-amber-800 text-sm mb-1 flex items-center">
+                <span className="mr-1">🤖</span> Fun Fact
               </h4>
-              <p className="text-amber-700 text-sm leading-relaxed">
+              <p className="text-amber-700 text-xs leading-snug">
                 I once trained a model to predict my cat Pluto's mood based on his facial expression. He was "tired" with a 95% confidence 9 times out of 10. I proceeded to let him nap.
               </p>
             </div>
