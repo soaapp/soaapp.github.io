@@ -16,11 +16,8 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
     { id: 'contact', label: 'Contact' }
   ];
 
-  const handleResumeDownload = () => {
-    // This would typically download a PDF from your server
-    console.log('Resume download initiated');
-    alert('Resume download feature - connect to your PDF file!');
-  };
+
+
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-blue-100">
@@ -48,13 +45,14 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={handleResumeDownload}
+            <a
+              href="/JayJ_MLEResume_v2.pdf"
+              download
               className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg"
             >
               <Download className="w-4 h-4 mr-2" />
               Resume
-            </button>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -88,16 +86,15 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
                   {item.label}
                 </button>
               ))}
-              <button
-                onClick={() => {
-                  handleResumeDownload();
-                  setIsMenuOpen(false);
-                }}
+              <a
+                href="/JayJ_MLEResume_v2.pdf"
+                download
                 className="w-full mt-2 inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         )}

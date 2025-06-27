@@ -33,7 +33,7 @@ export default function About() {
               </p>
 
               <p className="text-gray-700 leading-relaxed">
-                Outside of work, you'll find me playing piano, watching hockey, or exploring the latest in AI and computer vision. Let's build something amazing together!
+                Outside of work, you'll find me practicing piano, playing hockey, stargazing, or exploring the latest in AI and computer vision.
               </p>
             </div>
 

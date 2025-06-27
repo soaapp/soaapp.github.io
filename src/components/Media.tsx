@@ -20,7 +20,7 @@ export default function Media() {
       image: "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Python", "React", "ML", "Node.js"],
       links: [
-        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
+        // { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
       metrics: []
     },
@@ -31,7 +31,7 @@ export default function Media() {
       image: "https://images.pexels.com/photos/4386375/pexels-photo-4386375.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["React", "Prisma", "Cypress", "TypeScript"],
       links: [
-        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
+        // { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
       metrics: []
     },
@@ -42,7 +42,7 @@ export default function Media() {
       image: "https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Python", "HuggingFace", "NASA API", "ML"],
       links: [
-        { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
+        // { label: "GitHub", url: "#", icon: <Github className="w-4 h-4" /> }
       ],
       metrics: []
     }

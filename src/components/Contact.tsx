@@ -124,7 +124,7 @@ export default function Contact() {
                 Quick Note
               </h4>
               <p className="text-blue-700 text-sm leading-relaxed">
-                I typically respond within 24 hours (unless I'm debugging a particularly stubborn model). 
+                I typically respond within 24 hours (unless I'm debugging a particularly stubborn bug). 
                 I'm always up for discussing new opportunities, collaboration, or just geeking out about the latest in ML!
               </p>
             </div>
