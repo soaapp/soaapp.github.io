@@ -68,11 +68,13 @@
     </div>
     
     <div id="root"></div>
+    
+    <!-- This will be replaced by Vite with the correct script path -->
     <script type="module" src="/src/main.tsx"></script>
     
     <script>
       // Hide loading screen once content is loaded
-      window.addEventListener('load', () => {
+      document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           const loading = document.getElementById('loading');
           if (loading) {
