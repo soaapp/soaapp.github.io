@@ -1,5 +1,4 @@
-import React from 'react';
-import { Mail, MessageSquare, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, MessageSquare, Linkedin, Github } from 'lucide-react';
 
 export default function Contact() {
 
