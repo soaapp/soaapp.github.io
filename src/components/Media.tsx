@@ -162,10 +162,15 @@ export default function Media() {
 
         {/* More Projects CTA */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center px-6 py-3 bg-white border-2 border-blue-200 text-blue-700 font-medium rounded-lg hover:bg-blue-50 transition-all duration-200">
+          <a 
+            href="https://github.com/soaapp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 bg-white border-2 border-blue-200 text-blue-700 font-medium rounded-lg hover:bg-blue-50 transition-all duration-200"
+          >
             <Github className="w-5 h-5 mr-2" />
             View More on GitHub
-          </div>
+          </a>
         </div>
       </div>
     </section>
