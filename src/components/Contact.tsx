@@ -45,72 +45,40 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Info */}
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-blue-50 rounded-lg flex-shrink-0 flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900">Email</div>
-                      <a href="mailto:jjahanzad@gmail.com" className="text-blue-600 hover:underline">
-                        jjahanzad@gmail.com
-                      </a>
-                    </div>
+        <div className="max-w-2xl mx-auto">
+          {/* Social Links */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Connect With Me</h3>
+            <div className="space-y-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center p-4 rounded-lg border border-gray-100 hover:shadow-md transition-all duration-200 ${social.bgColor}`}
+                >
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${social.color} ${social.bgColor.replace('hover:', '')} mr-4`}>
+                    <social.icon className="w-6 h-6" />
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-blue-50 rounded-lg flex-shrink-0 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900">Location</div>
-                      <div className="text-gray-600">Toronto, ON</div>
-                    </div>
+                  <div>
+                    <div className="font-medium text-gray-900 text-lg">{social.label}</div>
+                    <div className="text-gray-500">{social.description}</div>
                   </div>
-                </div>
-              </div>
-
-              {/* Fun Note */}
-              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-100 rounded-2xl p-6">
-                <h4 className="font-bold text-blue-800 mb-2 flex items-center">
-                  <MessageSquare className="w-5 h-5 mr-2" />
-                  Quick Note
-                </h4>
-                <p className="text-blue-700 text-sm leading-relaxed">
-                  I typically respond to emails within 24 hours. I'm always up for discussing new opportunities, collaboration, or just geeking out about the latest in ML and AI!
-                </p>
-              </div>
+                </a>
+              ))}
             </div>
-
-            {/* Social Links */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold text-gray-900">Connect With Me</h3>
-              <div className="grid gap-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center p-4 rounded-xl border border-gray-100 bg-white hover:shadow-md transition-all duration-200 ${social.bgColor}`}
-                  >
-                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${social.color} ${social.bgColor.replace('hover:', '')} mr-4`}>
-                      <social.icon className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900">{social.label}</div>
-                      <div className="text-sm text-gray-500">{social.description}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
+          </div>
+          
+          {/* Quick Note */}
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-100 rounded-2xl p-6">
+            <h4 className="font-bold text-blue-800 mb-2 flex items-center">
+              <MessageSquare className="w-5 h-5 mr-2" />
+              Quick Note
+            </h4>
+            <p className="text-blue-700 text-sm leading-relaxed">
+              I typically respond to emails within 24 hours. I'm always up for discussing new opportunities, collaboration, or just geeking out about the latest in ML and AI!
+            </p>
           </div>
         </div>
       </div>
