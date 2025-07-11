@@ -24,23 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install gh-pages
-        run: npm install -g gh-pages
-
       - name: Build
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-
       - name: Deploy to GitHub Pages
-        run: |
-          # Install gh-pages locally instead of globally
-          npm install --save-dev gh-pages
-          # Run the deploy script with the correct token
-          GIT_USER=GitHub GIT_PASS=${{ secrets.GITHUB_TOKEN }} npm run deploy
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
