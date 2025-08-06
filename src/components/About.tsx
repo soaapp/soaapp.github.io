@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Code, Coffee, Zap } from 'lucide-react';
+import { Brain, Code, Bug, BookOpen } from 'lucide-react';
 
 export default function About() {
   const currentTechStack = [
@@ -55,12 +55,12 @@ export default function About() {
                 <div className="text-sm text-gray-600">Lines of Code</div>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-blue-100">
-                <Coffee className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <Bug className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                 <div className="font-mono text-2xl font-bold text-blue-600">∞</div>
-                <div className="text-sm text-gray-600">Cups of Coffee</div>
+                <div className="text-sm text-gray-600">Debug Hours</div>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-blue-100">
-                <Zap className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <BookOpen className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                 <div className="font-mono text-2xl font-bold text-blue-600">24/7</div>
                 <div className="text-sm text-gray-600">Learning Mode</div>
               </div>
