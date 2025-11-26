@@ -19,7 +19,7 @@ function App() {
       contact: 'Contact - Jay Jahanzad | ML Engineer'
     };
 
-    document.title = sectionTitles[activeSection] || 'Jay Jahanzad | Senior ML Engineer';
+    document.title = sectionTitles[activeSection] || 'Jay Jahanzad | AI/ML Engineer';
   }, [activeSection]);
 
   return (
