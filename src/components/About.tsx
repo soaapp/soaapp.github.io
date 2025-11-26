@@ -23,7 +23,7 @@ export default function About() {
               <h2 className="text-4xl font-bold text-gray-900">
                 Hi, I'm Jay Jahanzad{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                  — Software Engineer
+                  — AI/ML Engineer
                 </span>
               </h2>
             </div>
